@@ -1,0 +1,14 @@
+Index: src/MenuPrincipal.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class MenuPrincipal {\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/MenuPrincipal.java b/src/MenuPrincipal.java
+--- a/src/MenuPrincipal.java	(revision 34a736150c9e8c403599ef94eae175af14c45c00)
++++ b/src/MenuPrincipal.java	(date 1744072397404)
+@@ -1,2 +1,3 @@
+ public class MenuPrincipal {
++
+ }

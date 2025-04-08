@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="904a53bd-f0af-4f85-bd94-42b5cec101f1" name="Changes" comment="CRUDE EPI finalizado.">
-      <change afterPath="$PROJECT_DIR$/src/MenuDevolucoes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MenuEmprestimos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MenuEpi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MenuPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MenuUsuarios.java" afterDir="false" />
+    <list default="true" id="904a53bd-f0af-4f85-bd94-42b5cec101f1" name="Changes" comment="inicio do projeto de Sistema de EPI">
+      <change afterPath="$PROJECT_DIR$/src/EPIs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MenuDevolucao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MenuEPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MenuEmprestimo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MenuUsuario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SistemaPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/devolucaoEPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/emprestimoEPI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/usuarioEPI.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Devolucoes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Devolucoes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Emprestimos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Emprestimos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Epis.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Epis.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Usuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Usuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Devolucoes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Emprestimos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Epis.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuDevolucoes.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuEmprestimos.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuEpi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuPrincipal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MenuUsuarios.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Usuarios.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +31,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExportToHTMLSettings">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../CRUDE EPI\exportToHTML" />
+    <option name="printScope" value="4" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -35,8 +45,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
+    {
+      &quot;state&quot;: &quot;CLOSED&quot;,
+      &quot;assignee&quot;: &quot;Jair1503&quot;
+    }
+  ],
   &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;state&quot;: &quot;CLOSED&quot;,
     &quot;assignee&quot;: &quot;Jair1503&quot;
   }
 }</component>
@@ -61,6 +77,7 @@
     "Application.Epis.executor": "Run",
     "Application.SistemaEpi.executor": "Debug",
     "Application.SistemaGerenciamentoEpis.executor": "Run",
+    "Application.SistemaPrincipal.executor": "Run",
     "Application.SitemaEpi.executor": "Run",
     "Application.Usuarios.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -70,7 +87,7 @@
     "onboarding.tips.debug.path": "C:/Users/antonio_j_jesus/IdeaProjects/CRUDE EPI/src/Main.java"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.Epis">
+  <component name="RunManager" selected="Application.SistemaPrincipal">
     <configuration name="Emprestimos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Emprestimos" />
       <module name="CRUDE EPI" />
@@ -85,6 +102,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SistemaPrincipal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SistemaPrincipal" />
+      <module name="CRUDE EPI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Usuarios" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Usuarios" />
       <module name="CRUDE EPI" />
@@ -94,11 +118,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.Epis" />
+      <item itemvalue="Application.SistemaPrincipal" />
       <item itemvalue="Application.Emprestimos" />
       <item itemvalue="Application.Usuarios" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SistemaPrincipal" />
         <item itemvalue="Application.Usuarios" />
         <item itemvalue="Application.Emprestimos" />
       </list>
