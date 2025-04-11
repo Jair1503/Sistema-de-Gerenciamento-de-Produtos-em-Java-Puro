@@ -1,12 +1,15 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class EPIs {
-    public static void criarMenu() {
-        Scanner input = new Scanner(System.in);
+    static ArrayList<String> epis = new ArrayList<>();
+    static Scanner input = new Scanner(System.in);
+private String EPIs;
+    public static void main(String[] args) {
         int opcao;
 
         do {
-            System.out.println("\n----- CRUD de EPIs -----");
+            System.out.println("\n----- Sisema de EPIs -----");
             System.out.println("1. Cadastrar EPI");
             System.out.println("2. Listar EPIs");
             System.out.println("3. Atualizar EPI");
@@ -18,16 +21,16 @@ public class EPIs {
 
             switch (opcao) {
                 case 1:
-                    MenuEPI.cadastrarEPI();
+                    cadastrarEPI();
                     break;
                 case 2:
-                    MenuEPI.listarEPIs();
+                    listarEPIs();
                     break;
                 case 3:
-                    MenuEPI.atualizarEPI();
+                    atualizarEPI();
                     break;
                 case 4:
-                    MenuEPI.removerEPI();
+                    removerEPI();
                     break;
                 case 0:
                     System.out.println("Voltando ao menu principal...");
@@ -35,9 +38,57 @@ public class EPIs {
                 default:
                     System.out.println("Opção inválida. Tente novamente.");
             }
-        } while (opcao != 0);
+        }
+        while (opcao != 0);
+    }
+
+    static void cadastrarEPI() {
+        System.out.print("Digite o nome do EPI: ");
+        String nome = input.nextLine();
+        epis.add(nome);
+        System.out.println("EPI cadastrado com sucesso!");
+    }
+
+    static void listarEPIs() {
+        System.out.println("\n--- Lista de EPIs ---");
+        for (int i = 0; i < epis.size(); i++) {
+            System.out.println(i + " - " + epis.get(i));
+        }
+    }
+
+    static void atualizarEPI() {
+        listarEPIs();
+        System.out.print("Digite o índice do EPI a atualizar: ");
+        int index = input.nextInt();
+        input.nextLine();
+        if (index >= 0 && index < epis.size()) {
+            System.out.print("Digite o novo nome: ");
+            String novoNome = String.valueOf(epis);
+            epis.set(index, novoNome);
+            System.out.println("EPI atualizado.");
+        } else {
+            System.out.println("Índice inválido.");
+        }
+    }
+
+    static void removerEPI() {
+        listarEPIs();
+        System.out.print("Digite o índice do EPI a remover: ");
+        int index;
+        index = input.nextInt();
+        input.nextLine();
+        if (index >= 0 && index < epis.size()) {
+            epis.remove(index);
+            System.out.println("EPI removido.");
+        } else {
+            System.out.println("Índice inválido.");
+        }
+
+
     }
 }
+
+
 
 
 
